@@ -2,6 +2,13 @@
   box-sizing: border-box;
 }
 
+.arrow {
+  float: right;
+  width: 10%;
+  margin-top: 20px;
+  text-align: right;
+}
+
 body {
   background-color: #333;
   font-family: sans-serif;
@@ -11,28 +18,47 @@ body {
 .container {
   margin: 0 auto;
   width: 420px;
+  background-color: #dadada;/*I had trouble lining up the background with the content*/
 }
 
-.content h1 {
+.content {
+  float: left;
+  width: 80%;
+  padding: 10px 0 10px 0;
+}
+
+.location {
+  width: 100%;
+  background-color: #dadada;
+  padding: 10px;
+  float: left;
+  border-bottom: 1px solid #000;
+}
+
+.location h1 {
   font-size: 20px;
-  color:#FFF;
+  font-weight: bold;
+  color:#000;
 }
 
-.content h3 {
+.location h3 {
   font-size: 15px;
-  color:#FFF;
+  color: #000;
 }
 
-.location:hover { background-color:#0070BC; }
+.location:hover {
+  background-color:#0070BC;
+}
 
 nav {
   margin: 0 auto;
   padding: 10px 0 15px 15px;
   position: fixed;
   width: 420px;
+  background-color: black;
 }
 
 .restaurant-list {
   padding-top: 50px;
-  width: 80%;
+  width: 100%;
 }
